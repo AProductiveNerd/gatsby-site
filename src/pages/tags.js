@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Utilities
-import kebabCase from "lodash/kebabCase"
+import camelCase from "lodash/camelCase"
 
 // Components
 import { Link, graphql } from "gatsby"
@@ -28,7 +28,7 @@ const TagsPage = ({
         <div key={tag.fieldValue}>
           <Link
             className="card-link"
-            to={`/tags/${kebabCase(tag.fieldValue)}/`}
+            to={`/tags/${camelCase(tag.fieldValue)}/`}
           >
             <div className="card content-card">
               <div className="card-body content-card-body">

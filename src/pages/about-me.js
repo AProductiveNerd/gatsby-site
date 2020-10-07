@@ -4,7 +4,7 @@ import Layout from "../components/layout.js"
 export default function Home() {
   return (
     <Layout>
-      About page
+      <div className="site-content">About Me</div>
     </Layout>
   )
 }

@@ -10,36 +10,36 @@ module.exports = {
     title: "A Productive Nerd",
     description: "blogsfgsdjhfopshfufiopsdfjfsdiojfed",
     author: "Me",
-    twitterHandle: '@SikandMr',
+    twitterHandle: "@SikandMr",
     email: "hi@aproductivenerd.com",
     url: "https://www.aproductivenerd.com",
     social: {
       twitter: "mr.sikand",
-    }
+    },
   },
   plugins: [
-    `gatsby-plugin-react-helmet`, 
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
         path: `${__dirname}/src/pages/content/`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/pages/content/articles/images`,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-mdx`,
@@ -48,7 +48,6 @@ module.exports = {
           {
             resolve: `gatsby-remark-image-attributes`,
             options: {
-  
               // ?Array<String> | Boolean
               //   Any names declared here are added
               //   to the default set of attributes
@@ -58,31 +57,31 @@ module.exports = {
               //   property names will be recognized
               //   as styleAttribute.
               styleAttributes: [`display`, `position`, `border`],
-  
+
               // ?Boolean
               //   If true, all attributes that
               //   aren't styleAttributes, will be
               //   added as data-* attributes to the
               //   image.
-              dataAttributes: true
-            }
+              dataAttributes: true,
+            },
           },
           {
             resolve: `gatsby-remark-katex`,
             options: {
               // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
-              strict: `ignore`
-            }
-          }
+              strict: `ignore`,
+            },
+          },
         ],
         extensions: [`.mdx`, `.md`],
-          defaultLayouts: {
-            default: require.resolve(`${__dirname}/src/components/layout.js`)
-          }
+        defaultLayouts: {
+          default: require.resolve(`${__dirname}/src/components/layout.js`),
+        },
       },
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-  ]
+  ],
 }

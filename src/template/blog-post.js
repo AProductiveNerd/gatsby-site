@@ -7,36 +7,35 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import "../components/index.css"
 
-export default function Home({data}) {
-    const post = data.mdx
-    return (
-        <Layout>
-            <SEO title={post.frontmatter.title} />
+export default function Home({ data }) {
+  const post = data.mdx
+  return (
+    <Layout>
+      <SEO title={post.frontmatter.title} />
 
-            <article class="container-sm article">
-                
-                <h1 style={{fontSize: "55px"}}>{post.frontmatter.title}</h1>
-                <hr /> <br />
-                <MDXRenderer>{post.body}</MDXRenderer>
-            </article>
-        </Layout>
-    )
+      <article class="container-sm article">
+        <h1 className="article-title">{post.frontmatter.title}</h1>
+        <hr /> <br />
+        <MDXRenderer>{post.body}</MDXRenderer>
+      </article>
+    </Layout>
+  )
 }
 
 export const query = graphql`
-    query($slug: String!) {
-        site {
-            siteMetadata {
-                url
-                twitterHandle
-            }
-        }
-        mdx(fields: {slug: { eq: $slug  }} ) {
-            body
-            frontmatter {
-                title
-                tags
-            }
-        }
+  query($slug: String!) {
+    site {
+      siteMetadata {
+        url
+        twitterHandle
+      }
     }
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
+      frontmatter {
+        title
+        tags
+      }
+    }
+  }
 `

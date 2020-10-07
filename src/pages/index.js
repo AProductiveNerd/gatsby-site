@@ -7,26 +7,26 @@ export default function Home({ data }) {
   return (
     <Layout>
       <SEO title="🏠 Home" />
-
       <section className="site-content container">
         {data.allMdx.edges.map(({ node }) => (
           <div key={node.id}>
             <div className="card content-card">
               <p
                 style={{
-                  textTransform: "uppercase",
+                  textTransform: "camelCase",
                   color: "rgba(0, 161, 255, 1)",
                   fontSize: "13px",
                 }}
               >
-                <Link to={`/tags/${node.frontmatter.tags}`}>
-                  {node.frontmatter.tags}
+                <Link to={`/tags/${node.frontmatter.tags[0]}`}>
+                  {node.frontmatter.tags[0]}
                 </Link>
               </p>
               <a className="card-link" href={node.fields.slug}>
                 <div className="card-body content-card-body">
                   <h5 className="card-title">{node.frontmatter.title}</h5>
                   <span className="text-muted">{node.frontmatter.date}</span>
+                  <hr />
                   <p className="card-text text-muted">
                     {node.frontmatter.excerpt}
                   </p>
