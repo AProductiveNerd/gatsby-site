@@ -43,7 +43,7 @@ h6 {
   height: 280.175px;
   text-align: center;
   color: white;
-  text-overflow: clip;
+  overflow-y: hidden;
   margin-bottom: 20px;
 }
 
@@ -134,10 +134,10 @@ h6 {
   border: none !important;
   width: 100%;
   padding: 1rem;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgba(234, 134, 134, 0.15),
     rgba(158, 202, 249, 0.22)
-  ) !important;
+  ) !important; */
 }
 
 .content-card:hover {
@@ -216,8 +216,8 @@ h6 {
 @media only screen and (max-width: 425px) {
   .article {
     justify-content: space-around;
-    padding-left: 2px !important;
-    padding-right: 2px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   .article-title {

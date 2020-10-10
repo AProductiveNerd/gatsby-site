@@ -3,12 +3,15 @@ import PropTypes from "prop-types"
 // Components
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo.js"
 
 const Tags = ({ data }) => {
   const { edges, totalCount } = data.allMdx
   const tagHeader = `Number of posts is ${totalCount}`
   return (
     <Layout>
+      <SEO title="🏷 Tag" />
+
       <center>
         <h1 style={{ paddingBottom: "20px" }}>{tagHeader}</h1>
       </center>

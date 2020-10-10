@@ -6,7 +6,7 @@ import SEO from "../components/seo.js"
 export default function Home({ data }) {
   return (
     <Layout>
-      <SEO title="🏠 Home" />
+      <SEO title="💌 Sunday Times Sunday" />
       <section className="site-content container">
         {data.allMdx.edges.map(({ node }) => (
           <div key={node.id}>

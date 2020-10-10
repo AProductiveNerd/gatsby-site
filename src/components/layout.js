@@ -9,6 +9,21 @@ const layout = ({ children }) => {
   return (
     <div>
       <Helmet>
+        {/* Google Analytics Tag */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-172115128-2"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-172115128-2');
+          `}
+        </script>
+
         {/* CSS Styles */}
 
         <link
