@@ -14,6 +14,13 @@ export default () => {
             <i class="fa fa-twitter" aria-hidden="true"></i> Twitter DM me
           </a>
         </div>
+        <div style={{ textAlign: "center" }} className="col-sm-6">
+          <h6 style={{ color: "white" }}>Made with ❤ and <a href="https://www.gatsbyjs.com/">Gatsby</a> </h6>
+          <hr style={{ color: "white" }} />
+          <a href="mailto:hi@aproductivenerd.com">
+            Check out the source code for this website in <a href="">this Github Repo</a>
+          </a>
+        </div>
       </div>
     </div>
   )
