@@ -6,13 +6,10 @@ export default () => {
         <div
           style={{
             textAlign: "center",
-            padding: "0px",
-            margin: "0px",
-            border: "0px",
           }}
           className="flex-entry col col-xs-3 col-sm"
         >
-          <h6 style={{ color: "white" }}>Contact Me</h6>
+          <h6 style={{ color: "white", paddingTop: "20px" }}>Contact Me</h6>
           <hr style={{ color: "white" }} />
           <a href="mailto:hi@aproductivenerd.com">
             <i class="fas fa-mail-bulk"> </i> Mail me
@@ -25,9 +22,6 @@ export default () => {
         <div
           style={{
             textAlign: "center",
-            padding: "0px",
-            margin: "0px",
-            padding: "0px",
           }}
           className="flex-entry col col-xs-3 col-sm"
         >
