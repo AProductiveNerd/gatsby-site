@@ -234,6 +234,18 @@ h5 {
 @media only screen and (max-width: 425px) {
   .article {
     justify-content: space-around;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .article-title {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .article {
+    justify-content: space-around;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
