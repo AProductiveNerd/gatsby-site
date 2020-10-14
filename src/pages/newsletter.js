@@ -7,6 +7,18 @@ export default function Home({ data }) {
   return (
     <Layout>
       <SEO title="💌 Sunday Times Sunday" />
+      <section
+        // style={{ paddingBottom: "0px", marginBottom: "-810px" }}
+        className="container"
+      >
+        <h2>
+          <i>'Sunday Times Sunday'</i> is my weekly newsletter in which I share
+          cool stuff that I consumed in the week and some other bits
+        </h2>
+      </section>
+
+      <hr />
+
       <section className="site-content container">
         {data.allMdx.edges.map(({ node }) => (
           <div key={node.id}>
