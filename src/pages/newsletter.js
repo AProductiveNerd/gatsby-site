@@ -66,7 +66,7 @@ export const query = graphql`
     }
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
-      filter: { frontmatter: { type: { ne: "article" } } }
+      filter: { frontmatter: { type: { eq: "newsletter" } } }
     ) {
       edges {
         node {

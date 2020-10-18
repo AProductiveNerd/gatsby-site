@@ -85,6 +85,7 @@ h6 {
 
 .nav-item {
   float: left !important;
+  padding-right: 11px;
 }
 
 /* Share Icons */
@@ -176,6 +177,23 @@ h6 {
 .card-title {
   font-weight: 400;
   color: black !important;
+}
+
+.img-featured {
+  width: 150px;
+  height: 234px;
+  /* object-fit: contain !important; */
+}
+
+picture > img {
+  object-fit: contain !important;
+}
+
+.book-content {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  min-height: calc(100vh - 70px);
 }
 
 .article {

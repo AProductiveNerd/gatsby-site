@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo.js"
+import Img from "gatsby-image"
 
 export default function Home({ data }) {
   return (
@@ -23,13 +24,24 @@ export default function Home({ data }) {
                 </Link>
               </p>
               <a className="card-link" href={node.fields.slug}>
-                <div className="card-body content-card-body">
-                  <h5 className="card-title">{node.frontmatter.title}</h5>
-                  <span className="text-muted">{node.frontmatter.date}</span>
-                  <hr />
-                  <p className="card-text text-muted">
-                    {node.frontmatter.excerpt}
-                  </p>
+                <div className="book-content container">
+                  <div className="card-body content-card-body">
+                    <Img
+                      className="img-featured card-img-top"
+                      style={{ objectFit: "contain" }}
+                      fluid={
+                        node.frontmatter.featuredImage.childImageSharp.fluid
+                      }
+                    />
+                    <h5 style={{ paddingTop: "20px" }} className="card-title">
+                      {node.frontmatter.title}
+                    </h5>
+                    <span className="text-muted">{node.frontmatter.date}</span>
+                    <hr />
+                    <p className="card-text text-muted">
+                      {node.frontmatter.excerpt}
+                    </p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -58,7 +70,7 @@ export const query = graphql`
     }
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
-      filter: { frontmatter: { type: { eq: "article" } } }
+      filter: { frontmatter: { type: { eq: "books" } } }
     ) {
       edges {
         node {
@@ -70,6 +82,13 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
             tags
             excerpt
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           id
         }

@@ -28,6 +28,12 @@ export default () => {
               </span>
               Sunday Times Sunday
             </Nav.Link>
+            <Nav.Link className="nav-item nav-link" href="/notes">
+              <span role="img" aria-labelledby="emoji">
+                📚
+              </span>
+              Notes
+            </Nav.Link>
             <Nav.Link className="nav-item nav-link" href="/tags">
               <span role="img" aria-labelledby="emoji">
                 🏷
