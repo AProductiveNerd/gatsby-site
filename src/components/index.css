@@ -256,6 +256,10 @@ h5 {
     padding-right: 18px !important;
   }
 
+.footer {
+  flex-direction: column;
+}
+
   .article-title {
     font-size: 44px;
   }
@@ -279,8 +283,15 @@ h5 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
   background-image: url(publication-cover.png);
   background-size: cover;
-  z-index: 10;
   height: 280.175px;
+}
+
+.row-footer {
+  display: flex;
+}
+
+.col-footer {
+  flex: 50%;
 }
 
 .flex-entry {

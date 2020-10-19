@@ -72,14 +72,22 @@ export default () => {
                 data-size="small"
               >
                 <a
-                  rel="noreferrer"
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Faproductivenerd.com%2F&amp;src=sdkpreparse"
                   class="fb-xfbml-parse-ignore"
                 >
-                  <span className="share-icon">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </span>
+                  <iframe
+                    title="facebook-share-button"
+                    src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Faproductivenerd.com&layout=button&size=small&width=67&height=20&appId"
+                    width="67"
+                    height="20"
+                    style={{ border: "none", overflow: "hidden" }}
+                    scrolling="no"
+                    frameborder="0"
+                    allowTransparency="true"
+                    allow="encrypted-media"
+                  ></iframe>
                 </a>
               </div>
             </Nav.Link>

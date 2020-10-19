@@ -2,12 +2,12 @@ import React from "react"
 export default () => {
   return (
     <div style={{ marginTop: "50px" }} className="footer">
-      <div style={{ marginTop: "30px" }} className="row-cols-2">
+      <div style={{ marginTop: "30px" }} className="row-footer">
         <div
           style={{
             textAlign: "center",
           }}
-          className="flex-entry col col-xs-3 col-sm"
+          className="col-footer"
         >
           <h6 style={{ color: "white", paddingTop: "20px" }}>Contact Me</h6>
           <hr style={{ color: "white" }} />
@@ -23,11 +23,11 @@ export default () => {
           style={{
             textAlign: "center",
           }}
-          className="flex-entry col col-xs-3 col-sm"
+          className="col-footer"
         >
-          <h6 style={{ color: "white" }}>Contact Me</h6>
-          <hr style={{ color: "white" }} />
-          <a href="https://www.gatsbyjs.com">Made with ❤ and Gatsby</a>
+          <a style={{ paddingTop: "20px" }} href="https://www.gatsbyjs.com">
+            Made with ❤ and Gatsby
+          </a>
           <br />
           <a href="https://github.com/AProductiveNerd/gatsby-site">
             Click here to visit the soruce code for this website
