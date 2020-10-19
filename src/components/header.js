@@ -5,7 +5,6 @@ export default () => {
   return (
     <div className="top-banner">
       <div className="container">
-        {/* <Navbar className="navbar" collapseOnSelect expand="lg"> */}
         <Navbar className="navbar">
           <Navbar.Brand className="navbar-brand" href="/">
             <span role="img" aria-labelledby="emoji">
@@ -13,8 +12,6 @@ export default () => {
             </span>
             Home
           </Navbar.Brand>
-          {/* <Navbar.Toggle style={{outline: "none"}} className="btn-animated" aria-controls="responsive-navbar-nav"><i id="button-thing" className="fas fa-arrow-circle-down"></i></Navbar.Toggle> */}
-          {/* <Navbar.Collapse id="responsive-navbar-nav"> */}
           <Nav className="mr-auto">
             <Nav.Link className="nav-item nav-link" href="/about-me">
               <span role="img" aria-labelledby="emoji">
@@ -45,11 +42,10 @@ export default () => {
           <Nav>
             <Nav.Link className="nav-link">
               <a
-                target="__blank"
-                rel="noreferrer"
                 href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                class="twitter-share-button"
-                data-url="https://www.aproductivenerd.com"
+                className="twitter-share-button"
+                data-url="https://www.aproductivenerd.com/"
+                data-lang="en"
                 data-dnt="true"
                 data-show-count="false"
               >
@@ -92,7 +88,6 @@ export default () => {
               </div>
             </Nav.Link>
           </Nav>
-          {/* </Navbar.Collapse> */}
         </Navbar>
 
         <h1 className="site-title">A Productive Nerd</h1>
