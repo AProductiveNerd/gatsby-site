@@ -9,15 +9,15 @@ module.exports = {
   siteMetadata: {
     title: "A Productive Nerd",
     description:
-      "The place where we discuss about tech, producivity, coding, philosophy, science and tools for thought",
-    author: "Mr.Sikand",
+      "Discuss about gastronomy",
+    author: "Ramandeep",
     twitterHandle: "@SikandMr",
-    email: "hi@aproductivenerd.com",
-    url: "https://www.aproductivenerd.com",
+    email: "hi@bakeology.com",
+    url: "https://www.bakeology.com",
     social: {
-      twitter: "mr.sikand",
+      twitter: "null",
     },
-    siteUrl: `https://www.aproductivenerd.com`,
+    siteUrl: `https://www.bakeology.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

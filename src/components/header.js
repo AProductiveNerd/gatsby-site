@@ -19,18 +19,6 @@ export default () => {
               </span>
               About Me
             </Nav.Link>
-            <Nav.Link className="nav-item nav-link" href="/newsletter">
-              <span role="img" aria-labelledby="emoji">
-                💌
-              </span>
-              Sunday Times Sunday
-            </Nav.Link>
-            <Nav.Link className="nav-item nav-link" href="/notes">
-              <span role="img" aria-labelledby="emoji">
-                📚
-              </span>
-              Notes
-            </Nav.Link>
             <Nav.Link className="nav-item nav-link" href="/tags">
               <span role="img" aria-labelledby="emoji">
                 🏷
@@ -90,12 +78,17 @@ export default () => {
           </Nav>
         </Navbar>
 
-        <h1 className="site-title">A Productive Nerd</h1>
+        <h1 className="site-title">
+          <span role="img" aria-labelledby="emoji">
+            🧁
+          </span>
+          Bakeology
+        </h1>
         <h5
           className="site-sub-title"
           style={{ color: "rgba(255, 177, 59, 0.6)" }}
         >
-          Nerd out about tools for thought, productivity and learning
+          Gastronomy
         </h5>
       </div>
     </div>
