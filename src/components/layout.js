@@ -10,37 +10,8 @@ const layout = ({ children }) => {
     <div>
       <Helmet>
         {/* Google Analytics Tag */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-172115128-2"
-        ></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-172115128-2');
-          `}
-        </script>
-
-        {/* CSS Styles */}
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-        />
 
         {/* Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=David+Libre:wght@500;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-
         <script
           src="https://kit.fontawesome.com/df5ff3fd43.js"
           crossorigin="anonymous"
