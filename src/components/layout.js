@@ -24,6 +24,16 @@ const layout = ({ children }) => {
           `}
         </script>
 
+        {/* Microsoft Clarity */}
+        <script type="text/javascript">
+          {`
+              (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "3w00udr4mh");
+          `}
+        </script>
         {/* CSS Styles */}
 
         <link
@@ -32,15 +42,6 @@ const layout = ({ children }) => {
         />
 
         {/* Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=David+Libre:wght@500;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
-
         <script
           src="https://kit.fontawesome.com/df5ff3fd43.js"
           crossorigin="anonymous"

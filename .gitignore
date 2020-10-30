@@ -65,8 +65,14 @@ public
 yarn-error.log
 .pnp/
 .pnp.js
+.yarn
 # Yarn Integrity file
 .yarn-integrity
 
 # The public folder
 public
+
+#Cache
+.cache
+*.yml
+*.zip
